@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Set the background image and styling */
+      body {
+        background-color: black;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 32px; /* Adds 32px gap between divs */
+        height: 100vh;
+        background-image: url("D:/pyment/image/Frame.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: rgb(255, 255, 255); /* Default text color */
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: radial-gradient(rgb(94, 14, 14) 2%, black 40%);
+      }
+
+      /* Style the main heading text */
+      .center-text {
+        font-size: 80px; /* Default font size for large screens */
+        font-weight: bold;
+      }
+
+      /* Style for the word "Tickets" */
+      .highlight {
+        color: #ff6950;
+      }
+
+      /* Style the subheading text */
+      .subheading {
+        font-size: 18px; /* Default font size for subheading */
+        font-weight: 400;
+        color: #ffffff; /* Light gray color for subheading */
+      }
+
+      /* Style for the button */
+      .button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        color: black; /* Button text color */
+        background-color: white; /* Button background color */
+        border: none;
+        border-radius: 40px; /* Rounded corners */
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      /* Hover effect for the button */
+      .button:hover {
+        color: white;
+        background-color: black; /* Slightly darker white for hover effect */
+      }
+
+      /* Tablet and smaller screens */
+      @media (max-width: 768px) {
+        .center-text {
+          font-size: 50px; /* Adjust font size for tablets */
+        }
+        .subheading {
+          font-size: 16px; /* Adjust subheading font size for tablets */
+          padding: 0 20px; /* Add padding for better readability */
+        }
+        .button {
+          padding: 10px 20px;
+          font-size: 1em;
+        }
+      }
+
+      /* Mobile phones */
+      @media (max-width: 480px) {
+        .center-text {
+          font-size: 32px; /* Smaller font size for main heading */
+        }
+        .subheading {
+          font-size: 12px; /* Smaller font size for subheading */
+          padding: 0 15px; /* Reduced padding for narrower screens */
+          /* margin: 20px 60px; */
+          line-height: 1.4; /* Increased line height for readability */
+        }
+        .button {
+          padding: 8px 16px;
+          font-size: 0.9em;
+          width: 90%; /* Button spans wider on mobile for easier tap */
+          max-width: 80px; /* Restrict max width to keep button manageable */
+        }
+        body {
+          gap: 16px; /* Reduce spacing between elements on mobile */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center-text">
+      Book Your <span class="highlight">Tickets</span><br />
+      Now!
+    </div>
+    <div class="subheading">
+      Don't miss out on a full day of <i>ideas worth sharing </i>and refreshing
+      entertainment.<br />
+      Reserve your slot before seats run out!
+    </div>
+    <a href="test2.html" class="button">Book Now</a>
+  </body>
+</html>
